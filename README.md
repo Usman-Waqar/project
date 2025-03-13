@@ -10,11 +10,17 @@ This study aims to analyze the relationship between military spending and global
 
 **Data Sources:**
 
-The primary dataset for this project is the Military Expenditure by Country (1970-2020) dataset from Kaggle. It contains information on the military spending of various countries over several decades.
+The primary dataset for this project is the Military Expenditure by Country (1970-2020) dataset from Kaggle. It contains information on the military spending of various countries over several decades. It contains data about the military expenditure of the countries over the course of 50 years and it shows these percentages with respect to GDP and government sepnding. 
+
+Link:
+https://www.kaggle.com/datasets/prasertk/military-expenditure-by-country-from-19702020
 
 To enrich the analysis, a secondary dataset containing global conflict data will be added:
 
-Uppsala Conflict Data Program (UCDP): Provides detailed records of armed conflicts, including start and end dates, severity, and involved nations.
+Uppsala Conflict Data Program (UCDP): Provides detailed records of armed conflicts, including start and end dates, severity, and involved nations. Gives insight on each country and its major and minor conflicts.
+
+Link:
+https://ucdp.uu.se/
 
 **Data Collection Plan:**
 
