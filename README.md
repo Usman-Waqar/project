@@ -1,38 +1,40 @@
 # **Military Expenditure vs. Global Conflicts**
 
 ## **Motivation**  
-Military spending is a crucial aspect of national security and geopolitical strategy. Understanding how military expenditure fluctuates in response to global conflicts can provide insights into defense policies, economic trade-offs, and international relations.  
-
-I have always been deeply interested in geopolitics, global conflicts, and history. I closely follow current conflicts to stay informed about global events. This project is a reflection of my curiosity about how military budgets evolve in response to wars and geopolitical tensions.  
-
+Military spending is a mandatory and crucial aspect of national security and geopolitical strategy. Understanding how military expenditure fluctuates in response to global conflicts can provide insights into defense policies, economic trade-offs, and international relations. This is a crucial step in the analysis of different countries in the geopolitical world. I personally find geopolitics, global conflicts and history very interesting and tend to keenly follow current conflicts, mainly trying to keep up with what is going on around the world, thats why i decided to make my project on this topic.
+ 
 ---
 
 ## **Goal**  
-This study aims to analyze the relationship between military spending and global conflicts. Specifically, it investigates whether military budgets tend to increase **before, during, or after** major wars and geopolitical tensions.  
+This study aims to analyze the relationship between military spending and global conflicts, investigating whether military budgets tend to increase before, during, or after major wars and geopolitical tensions.
 
 ---
 
 ## **Research Questions**  
 This project seeks to answer the following key questions:  
 
-1️ **How does military expenditure fluctuate in response to global conflicts?** Is there a pattern in spending before, during, or after conflicts?  
-2️ **Do countries involved in prolonged conflicts exhibit sustained increases in military budgets** compared to those experiencing short-term conflicts?  
-3️ **Are there regional differences in military spending trends** related to geopolitical tensions (e.g., Middle East vs. Europe vs. Asia)?  
-4️ **Can historical data on military spending and conflicts be used to predict future military expenditure trends?**  
+1) How does military expenditure fluctuate in response to global conflicts, and is there a pattern in spending before, during, or after conflicts?
+
+2) Do countries involved in prolonged conflicts exhibit sustained increases in military budgets compared to those experiencing short-term conflicts?
+
+3) Are there regional differences in military spending trends related to geopolitical tensions (e.g., Middle East vs. Europe vs. Asia)?
+
+4) Can historical data on military spending and conflicts be used to predict future military expenditure trends?  
 
 ---
 
 ## **Data Sources**  
-The project relies on two primary datasets:  
+The primary dataset for this project is the Military Expenditure by Country (1970-2020) dataset from Kaggle. It contains information on the military spending of various countries over several decades. It contains data about the military expenditure of the countries over the course of 50 years and it shows these percentages with respect to GDP and government sepnding. 
 
-### **Military Expenditure Dataset**  
-*Source:* [Military Expenditure by Country (1970-2020) - Kaggle](https://www.kaggle.com/datasets/prasertk/military-expenditure-by-country-from-19702020)  
-*Description:* Contains military spending data for various countries over five decades. It includes military expenditure as a percentage of **GDP** and **government spending**.  
+Link:
+https://www.kaggle.com/datasets/prasertk/military-expenditure-by-country-from-19702020
 
-### **Conflict Dataset**  
-*Source:* [Uppsala Conflict Data Program (UCDP)](https://ucdp.uu.se/)  
-*Description:* Provides detailed records of armed conflicts, including **start and end dates, severity, and involved nations**. This dataset helps analyze military spending trends in relation to conflict occurrences.  
+To enrich the analysis, a secondary dataset containing global conflict data will be added:
 
+Uppsala Conflict Data Program (UCDP): Provides detailed records of armed conflicts, including start and end dates, severity, and involved nations. Gives insight on each country and its major and minor conflicts.
+
+Link:
+https://ucdp.uu.se/
 ---
 
 ## **Data Collection Plan**  
@@ -74,22 +76,22 @@ Correlate the **intensity of conflicts** (e.g., casualties, duration) with **mil
 ---
 
 ## **Expected Findings**  
-🔹 Military spending likely **spikes before or during** major conflicts as countries prepare for war.  
-🔹 Some nations may **maintain high defense budgets post-conflict** due to prolonged security concerns.  
-🔹 Regions with frequent conflicts (e.g., **Middle East, Eastern Europe**) may show **more volatile** military budgets.  
-🔹 Economic constraints may **limit** military spending, even during high-conflict periods, in some **developing nations**.  
+Military spending likely spikes before or during major conflicts as countries prepare for war.
+Some countries may maintain high defense budgets post-conflict, possibly due to prolonged security concerns.
+Regions with frequent conflicts (e.g., the Middle East, Eastern Europe) may show more volatile military budgets.
+Economic constraints may limit military spending, even during high-conflict periods, in some developing nations
 
 ---
 
 ## **Limitations**  
-**Secretive Military Budgets:** Some nations **do not disclose** full military spending (e.g., Cold War arms race projects).  
-**Complex Causal Relationships:** Military budgets are influenced by **multiple economic and political factors**, not just conflicts.  
-**Scale & Nature of Conflicts:** Wars vary in **intensity, duration, and geopolitical impact**, making direct comparisons difficult.  
+The datasets may not capture secretive military budgets and secret projects for example during the cold war how various arms race projects were unreported.
+Conflicts vary in scale and nature, making causal relationships difficult to establish.
+Economic and political factors may influence military budgets beyond conflicts alone.
 
 ---
 
 ## **Future Work**  
 🔹 **Predict future military spending trends** based on past conflicts.  
-🔹 Analyze **alliance-driven spending** (e.g., NATO-related budget increases).  
+🔹 Analyze **alliance-driven spending**.  
 🔹 Investigate the impact of **nuclear deterrence policies** on military budgets.  
 
