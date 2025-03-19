@@ -8,7 +8,7 @@ Military spending is a mandatory and crucial aspect of national security and geo
 
 This study aims to analyze the relationship between military spending and global conflicts, investigating whether military budgets tend to increase before, during, or after major wars and geopolitical tensions.
 
-**Data Sources:**
+## **Data Sources:**
 
 The primary dataset for this project is the Military Expenditure by Country (1970-2020) dataset from Kaggle. It contains information on the military spending of various countries over several decades. It contains data about the military expenditure of the countries over the course of 50 years and it shows these percentages with respect to GDP and government sepnding. 
 
@@ -22,7 +22,7 @@ Uppsala Conflict Data Program (UCDP): Provides detailed records of armed conflic
 Link:
 https://ucdp.uu.se/
 
-**Data Collection Plan:**
+## **Data Collection Plan:**
 
 **1) Military Expenditure Dataset:**
 
@@ -65,7 +65,7 @@ Country-Specific Case Studies:
   Conduct hypothesis tests to determine whether military spending significantly increases before, during or after conflicts.
   Correlate the intensity of conflicts (number of casualties, duration) with military expenditure growth rates.
 
-**Expected Findings:**
+## **Expected Findings:**
 
 Military spending likely spikes before or during major conflicts as countries prepare for war.
 Some countries may maintain high defense budgets post-conflict, possibly due to prolonged security concerns.
@@ -73,13 +73,13 @@ Regions with frequent conflicts (e.g., the Middle East, Eastern Europe) may show
 Economic constraints may limit military spending, even during high-conflict periods, in some developing nations.
 
 
-**Limitations:**
+## **Limitations:**
 
 The datasets may not capture secretive military budgets and secret projects for example during the cold war how various arms race projects were unreported.
 Conflicts vary in scale and nature, making causal relationships difficult to establish.
 Economic and political factors may influence military budgets beyond conflicts alone.
 
-**Future Work:**
+## **Future Work:**
 
 Extend the analysis to predict future military spending trends based on past conflicts.
 Examine alliance-driven spending, where countries increase budgets due to NATO or other military alliances.
