@@ -57,7 +57,7 @@ The analysis will be carried out in the following phases:
   Handle missing or inconsistent data.
   Standardize monetary values for accurate comparisons.
 
-3. Exploratory Data Analysis (EDA)
+2. Exploratory Data Analysis (EDA)
 
 Trend Analysis:
 
@@ -72,7 +72,7 @@ Country-Specific Case Studies:
 
   Examine military budgets of key nations involved in long-term conflicts (e.g., the U.S., Russia, Middle Eastern nations).
 
-4. Statistical Tests & Correlations
+3. Statistical Tests & Correlations
 
   Conduct hypothesis tests to determine whether military spending significantly increases before, during or after conflicts.
   Correlate the intensity of conflicts (number of casualties, duration) with military expenditure growth rates.
