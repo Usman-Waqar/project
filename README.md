@@ -10,7 +10,7 @@ This study aims to analyze the relationship between military spending and global
 
 ## **Research Questions:**
 
-**These are some questions that the project aims to answer:
+**These are some questions that the project aims to answer:**
 
 1) How does military expenditure fluctuate in response to global conflicts, and is there a pattern in spending before, during, or after conflicts?
 
