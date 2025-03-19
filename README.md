@@ -8,6 +8,18 @@ Military spending is a mandatory and crucial aspect of national security and geo
 
 This study aims to analyze the relationship between military spending and global conflicts, investigating whether military budgets tend to increase before, during, or after major wars and geopolitical tensions.
 
+## **Research Questions:**
+
+**These are some questions that the project aims to answer:
+
+1) How does military expenditure fluctuate in response to global conflicts, and is there a pattern in spending before, during, or after conflicts?
+
+2) Do countries involved in prolonged conflicts exhibit sustained increases in military budgets compared to those experiencing short-term conflicts?
+
+3) Are there regional differences in military spending trends related to geopolitical tensions (e.g., Middle East vs. Europe vs. Asia)?
+
+4) Can historical data on military spending and conflicts be used to predict future military expenditure trends?
+
 ## **Data Sources:**
 
 The primary dataset for this project is the Military Expenditure by Country (1970-2020) dataset from Kaggle. It contains information on the military spending of various countries over several decades. It contains data about the military expenditure of the countries over the course of 50 years and it shows these percentages with respect to GDP and government sepnding. 
