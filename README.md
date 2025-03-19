@@ -1,10 +1,10 @@
 # **Military Expenditure vs. Global Conflicts**
 
-**Motivation:**
+## **Motivation:**
 
 Military spending is a mandatory and crucial aspect of national security and geopolitical strategy. Understanding how military expenditure fluctuates in response to global conflicts can provide insights into defense policies, economic trade-offs, and international relations. This is a crucial step in the analysis of different countries in the geopolitical world. I personally find geopolitics, global conflicts and history very interesting and tend to keenly follow current conflicts, mainly trying to keep up with what is going on around the world, thats why i decided to make my project on this topic.
 
-**Goal:**
+## **Goal:**
 
 This study aims to analyze the relationship between military spending and global conflicts, investigating whether military budgets tend to increase before, during, or after major wars and geopolitical tensions.
 
