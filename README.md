@@ -1,4 +1,4 @@
-Title: **Military Expenditure vs. Global Conflicts**
+# **Military Expenditure vs. Global Conflicts**
 
 **Motivation:**
 
