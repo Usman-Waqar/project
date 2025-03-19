@@ -12,13 +12,13 @@ This study aims to analyze the relationship between military spending and global
 
 **These are some questions that the project aims to answer:**
 
-1) How does military expenditure change in response to global conflicts, and is there a pattern in spending before, during, or after conflicts?
+1)  How does military expenditure change in response to global conflicts, and is there a pattern in spending before, during, or after conflicts?
 
-2) Do countries involved in longer conflicts show increases in military budgets compared to those experiencing shorter conflicts?
+2)  Do countries involved in longer conflicts show increases in military budgets compared to those experiencing shorter conflicts?
 
-3) Are there regional/geographical differences in military spending trends related to geopolitical tensions?
+3)  Are there regional/geographical differences in military spending trends related to geopolitical tensions?
 
-4) Can historical data on military spending and conflicts be used to predict future military expenditure trends?
+4)  Can historical data on military spending and conflicts be used to predict future military expenditure trends?
 
 ## **Data Sources:**
 
