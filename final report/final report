@@ -1,18 +1,14 @@
-# 📊 DSA210 Final Project — Military Expenditure vs. Global Conflicts
-
-## 👤 Author: _[Your Name]_  
-**Course:** DSA210 — Data Science Applications  
-**Term:** Spring 2025  
+# DSA210 Final Report — Military Expenditure vs. Global Conflicts
 
 ---
 
-## 🧭 Project Overview
+##  Project Overview
 
-This project investigates how global conflicts influence military expenditure across countries over time. The goal is to understand whether countries increase military budgets in response to wars, and to what extent conflict intensity affects spending patterns. In later stages, we also explored whether historical trends in conflict and time can help **predict future military spending** using machine learning methods.
+This project investigates how global conflicts influence military expenditure across countries over time. The goal is to understand whether countries increase military budgets in response to wars, and to what extent conflict intensity affects spending patterns. In later stages, also explored whether historical trends in conflict and time can help predict future military spending using machine learning methods.
 
 ---
 
-## 🧠 Research Questions
+## Research Questions
 
 1. How does military expenditure change in response to global conflicts, and is there a spending pattern before, during, or after wars?
 2. Do countries involved in longer or more intense conflicts show increased military budgets?
@@ -21,7 +17,7 @@ This project investigates how global conflicts influence military expenditure ac
 
 ---
 
-## 🗂️ Data Sources
+##  Data Sources
 
 | Dataset | Description |
 |--------|-------------|
@@ -30,7 +26,7 @@ This project investigates how global conflicts influence military expenditure ac
 
 ---
 
-## 🧪 Stage 1: Project Proposal
+##  Stage 1: Project Proposal
 
 - Introduced the motivation: link between military budgets and geopolitical tensions.
 - Defined a plan to analyze spending data alongside conflict data from UCDP.
@@ -38,19 +34,14 @@ This project investigates how global conflicts influence military expenditure ac
 
 ---
 
-## 📊 Stage 2: Data Collection, EDA & Statistical Testing
+##  Stage 2: Data Collection, EDA & Statistical Testing
 
-### 🔧 Data Cleaning & Merging
+###  Data Cleaning & Merging
 - Standardized country-year pairs across both datasets.
 - Created a `conflict_flag` (1 = country at war that year) and `log_intensity` (battle-death proxy).
-- Final merged dataset:  
 
 
-
-
-
-
-### 📈 Exploratory Data Analysis
+###  Exploratory Data Analysis
 - Time series plots of military expenditure.
 - Boxplots comparing spending in conflict vs. peace years.
 - Identified top conflict-prone countries (e.g., Iraq, Afghanistan, U.S., Russia).
