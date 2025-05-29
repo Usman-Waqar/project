@@ -1,100 +1,143 @@
-# DSA210 Final Report — Military Expenditure vs. Global Conflicts
+#  Military Expenditure vs. Global Conflicts
+
+This project explores the relationship between military expenditure and global conflicts, focusing on how defense budgets change before, during, and after wars. It also evaluates whether machine learning models can use historical conflict data to predict future spending.
+
+This topic is not only statistically interesting, but also deeply tied to my personal interest in geopolitics, history, and current global affairs. It combines historical military trends with modern data analysis methods.
 
 ---
 
-##  Project Overview
+##  Project Goals
 
-This project investigates how global conflicts influence military expenditure across countries over time. The goal is to understand whether countries increase military budgets in response to wars, and to what extent conflict intensity affects spending patterns. In later stages, also explored whether historical trends in conflict and time can help predict future military spending using machine learning methods.
-
----
-
-## Research Questions
-
-1. How does military expenditure change in response to global conflicts, and is there a spending pattern before, during, or after wars?
-2. Do countries involved in longer or more intense conflicts show increased military budgets?
-3. Are there regional differences in military spending related to geopolitical tensions?
-4. Can historical conflict and spending data be used to predict future military expenditure?
+- Analyze how military spending responds to global conflicts
+- Compare defense budgets during peacetime vs. wartime
+- Investigate if conflict intensity or duration influences spending
+- Use historical data to predict future military expenditure with ML models
 
 ---
 
-##  Data Sources
+##  Research Questions
 
-| Dataset | Description |
-|--------|-------------|
-| [Military Expenditure by Country (1970–2020)](https://www.kaggle.com/datasets/prasertk/military-expenditure-by-country-from-19702020) | Contains yearly military spending for ~170 countries, measured as % of GDP and total USD |
-| [UCDP/PRIO Armed Conflict Dataset (v24.1)](https://ucdp.uu.se/) | Lists all state-based armed conflicts with start/end years, countries involved, and battle-death intensity |
-
----
-
-##  Stage 1: Project Proposal
-
-- Introduced the motivation: link between military budgets and geopolitical tensions.
-- Defined a plan to analyze spending data alongside conflict data from UCDP.
-- Framed core questions and selected relevant datasets for exploration.
+1. Does military spending increase during armed conflicts?
+2. Do longer or more intense conflicts lead to higher military budgets?
+3. Can we predict military expenditure based on historical conflict data?
 
 ---
 
-##  Stage 2: Data Collection, EDA & Statistical Testing
+## Data Sources
 
-###  Data Cleaning & Merging
-- Standardized country-year pairs across both datasets.
-- Created a `conflict_flag` (1 = country at war that year) and `log_intensity` (battle-death proxy).
+###  Military Expenditure Data  
+- Source: [Kaggle - Military Expenditure by Country (1970–2020)](https://www.kaggle.com/datasets/prasertk/military-expenditure-by-country-from-19702020)
+- Annual defense spending by country (% of GDP)
 
-
-###  Exploratory Data Analysis
-- Time series plots of military expenditure.
-- Boxplots comparing spending in conflict vs. peace years.
-- Identified top conflict-prone countries (e.g., Iraq, Afghanistan, U.S., Russia).
-
-### 🧪 Hypothesis Testing
-- **Welch’s t-test:**  
-- **Result:** T = 8.235, p ≈ 0.000  
-- **Conclusion:** Military expenditure is **significantly higher** during conflict years.
+###  Conflict Data  
+- Source: [UCDP/PRIO Armed Conflict Dataset (v24.1)](https://ucdp.uu.se/)
+- Conflict dates, countries involved, and intensity scores (battle-death proxy)
 
 ---
 
-## 🤖 Stage 3: Machine Learning
+## 🧪 Stage 2: EDA & Statistical Testing
 
-### ✅ Goal
-Predict a country’s military spending (% of GDP) based on:
-- Time (Year)
-- Conflict participation (`conflict_flag`)
-- Conflict severity (`log_intensity`)
+###  Preprocessing  
+- Merged the datasets on `Country` and `Year`
+- Created:
+  - `conflict_flag`: 1 if country involved in a conflict that year
+  - `log_intensity`: log-transformed battle-death count
+  - Normalized `Year` for trend tracking
 
-### 🔍 Methods Used
+###  Exploratory Analysis  
+- Boxplots showed higher military spending during conflict years
+- Visualized trends over time and across regions
 
-#### 1. **Linear Regression**
-- Model: `military_expenditure ~ Year_norm + conflict_flag + log_intensity`
-- Coefficients:
-- `conflict_flag`: +0.76 → war years raise budgets by ~0.76 percentage points
-- `log_intensity`: +1.41 → higher severity = more spending
-- Performance:
-- R² = –0.077 (poor), MAE = 0.94
+###  Hypothesis Test  
+- **Welch’s t-test** on military expenditure in:
+  - **Conflict years** vs. **Peacetime**
+- **Results**:  
+  - **T = 8.235**, **p ≈ 0.000**  
+  -  Statistically significant increase during conflict years
 
-#### 2. **Random Forest Regressor**
-- Captured non-linearities and interactions
-- Feature importance:
-- Year_norm (~67%)
-- log_intensity (~29%)
-- conflict_flag (~4%)
-- Performance:
-- R² = 0.036, MAE = 0.94
-
-### 📉 Interpretation
-- Both models **confirmed the direction** of influence (wars → higher spending).
-- However, limited features led to **low predictive accuracy** (R² near 0).
-- This suggests that other economic, political, and regional factors are essential for accurate forecasting.
+**Conclusion:**  
+Countries significantly increase defense spending during wars.
 
 ---
 
-## ✅ Final Conclusions
+##  Stage 3: Machine Learning
 
-- **Statistical testing showed** a strong, significant increase in military spending during wars.
-- **Machine learning confirmed** this trend, but lacked predictive power due to limited inputs.
-- **Conflict intensity** has a stronger predictive role than simply knowing whether a war is ongoing.
-- **Year-over-year trends** remain the most consistent driver globally.
+Applied two models to predict military spending using:
+- `Year_norm` (normalized year)
+- `conflict_flag` (binary)
+- `log_intensity` (conflict severity)
+
+###  Linear Regression
+- **Coefficients:**
+  - Year_norm: –0.053 → slight downward trend over time
+  - conflict_flag: +0.76 → conflict years see notable increase
+  - log_intensity: +1.41 → more severe conflicts lead to higher budgets
+- **Performance (2011–2020):**
+  - R² = –0.077
+  - RMSE = 1.534 (% GDP)
+  - MAE = 0.942 (% GDP)
+
+**Interpretation**: Model confirms conflict effects, but performs poorly in forecasting due to limited features.
 
 ---
+
+###  Random Forest Regressor
+- **Feature Importances:**
+  - Year_norm: 67%
+  - log_intensity: 29%
+  - conflict_flag: 4%
+- **Performance (2011–2020):**
+  - R² = 0.036
+  - RMSE = 1.451
+  - MAE = 0.937
+
+ **Interpretation**: Slight improvement in variance explained, but still limited by feature set. Model underpredicts high-expenditure years.
+
+###  Overall conclusion for the machine learning:
+
+The methodology applied for the machine learning in this project was correct as we saw use of interpretable relevant features and two different models were applied namely Linear regression and random forest and these were evaluated using proper metrics.
+However the ML can be considered "incomplete" for production as not many features were used, there was not much parameter tuning and the generalization across countries and years can be considered poor. However the goal was merely exploratory. The machine learning sets a good example of how statistical significance does not necessarily mean that the predictions would be accurate, the t-tesing showed a strong relationship between war and spending but the ML models were underperforming in predicting this trend accurately.
+                                                                                                                                                                                                  
+###  Research Questions & Answers
+
+**1. How does military expenditure change in response to global conflicts?**  
+Military spending is significantly higher during conflict years.  
+- Welch’s t-test: T = 8.235, p < 0.001  
+- Linear regression: `conflict_flag` coefficient = +0.76  
+Conclusion: Clear evidence that wars trigger increased defense budgets.
+
+---
+
+**2. Do longer or more intense conflicts lead to higher spending?**  
+Yes, more intense conflicts are associated with higher military budgets.  
+- `log_intensity` coefficient = +1.41 in linear regression  
+Conclusion: While conflict duration wasn’t explicitly modeled, conflict severity strongly correlates with increased spending.
+
+---
+
+**3. Can we predict future military spending using conflict data?**  
+Limited predictive power with current features.  
+- Linear Regression R² = –0.077  
+- Random Forest R² = 0.036  
+Conclusion: Historical conflict data provides some signal, but accurate forecasting needs more features (e.g., GDP, politics, alliances).
+
+
+##  Final Conclusions
+
+- **T-tests** confirmed that military expenditure spikes during wars.
+- **ML models** captured this relationship but failed to predict future values reliably with the available features.
+- Conflict **intensity** has more predictive value than a binary conflict flag.
+- Time (year) remains the strongest driver due to long-term trends.
+
+---
+
+##  Limitations
+
+- Excludes important variables like GDP growth, political regimes, alliances.
+- Secret military spending (e.g., Cold War black budgets) is not captured.
+- ML models underperform due to limited feature richness.
+
+
 
 
 
