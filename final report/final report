@@ -1,4 +1,4 @@
-#  Military Expenditure vs. Global Conflicts
+#  **Military Expenditure vs. Global Conflicts++
 
 This project explores the relationship between military expenditure and global conflicts, focusing on how defense budgets change before, during, and after wars. It also evaluates whether machine learning models can use historical conflict data to predict future spending.
 
@@ -6,7 +6,7 @@ This topic is not only statistically interesting, but also deeply tied to my per
 
 ---
 
-##  Project Goals
+##  **Project Goals**
 
 - Analyze how military spending responds to global conflicts
 - Compare defense budgets during peacetime vs. wartime
@@ -15,7 +15,7 @@ This topic is not only statistically interesting, but also deeply tied to my per
 
 ---
 
-##  Research Questions
+##  **Research Questions**
 
 1. Does military spending increase during armed conflicts?
 2. Do longer or more intense conflicts lead to higher military budgets?
