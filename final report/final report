@@ -35,7 +35,7 @@ This topic is not only statistically interesting, but also deeply tied to my per
 
 ---
 
-## 🧪 Stage 2: EDA & Statistical Testing
+## Stage 2: EDA & Statistical Testing
 
 ###  Preprocessing  
 - Merged the datasets on `Country` and `Year`
