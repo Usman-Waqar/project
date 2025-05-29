@@ -17,9 +17,7 @@ This project seeks to answer the following key questions:
 
 2) Do countries involved in longer conflicts show increases in military budgets compared to those experiencing short-term conflicts?
 
-3) Are there regional differences in military spending trends related to geopolitical tensions (e.g., Middle East vs. Europe vs. Asia)?
-
-4) Can historical data on military spending and conflicts be used to predict future military expenditure trends?  
+3) Can historical data on military spending and conflicts be used to predict future military expenditure trends?  
 
 ---
 
